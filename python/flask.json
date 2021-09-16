@@ -1,0 +1,22 @@
+{
+  "configurations": {
+    "launch": {
+      "adapter": "debugpy",
+      "default": true,
+      "configuration": {
+        "name": "Python Flask",
+        "type": "python",
+        "request": "launch",
+        "python": "${workspaceRoot}/backend/env/bin/python",
+        "cwd": "${workspaceRoot}/backend/",
+        "program": "${workspaceRoot}/backend/env/bin/flask",
+        "args": ["run", "--host", "0.0.0.0", "--port", "6188", "--no-debugger", "--no-reload"],
+        "env": {
+          "FLASK_APP": "backend/app.py",
+          "FLASK_ENV": "development"
+        },
+        "justMyCode": false
+      }
+    }
+  }
+}
